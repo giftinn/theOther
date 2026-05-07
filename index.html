@@ -234,7 +234,7 @@ pointer-events:none;
 
 <canvas id="confettiCanvas"></canvas>
 
-   <audio id="bgm" src="song.mp3" loop></audio>
+   <audio id="bgm" src="https://giftinn.github.io/music-host/mawest.mp3" loop></audio>
    
 <div id="app">
 
@@ -336,7 +336,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '0805';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -384,9 +384,9 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
+{q:"Hari apa inii?, options:["Our mensiversary","Indonesia Merdeka","Someone mensiversary"],correct:0},
 {q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"What’s on my mind most of the time?", options:["Game","Someone else","You!!"],correct:2}
 ];
 
 let currentQ = 0;
@@ -451,7 +451,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2026-04-07T00:00:00");
 
     setInterval(()=>{
 
@@ -480,16 +480,16 @@ function revealMemory(el){
     alreadyRevealed = true;
 
     el.innerHTML = `
-        <img src="pict.jpg"
+        <img src="https://giftinn.github.io/music-host/leowon3.jpg"
         style="width:100%;height:100%;object-fit:cover;border-radius:18px">
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
+      even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. yet here you are, right in my life, and somehow that alone says everything. i admire the little things about you, like the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
 
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
+      with you, i’ve found a kind of peace i didn’t even know i was looking for. it’s a kind of comfort i didn’t know i needed until i found it in you. it’s something i can’t find anywhere else, no matter how hard i try. Every moment with you, no matter how small, feels important and meaningful.
       
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
+      thank you for being here with me, for every moment, every word, and every feeling we’ve shared. happy mensiversary, sayangku. i’m so grateful for you, today and always.  
       `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
